@@ -1,0 +1,263 @@
+body {
+  background-color: #F5F5F7;
+}
+.first-section{
+  position: relative;
+
+}
+.section-contents{
+  display: flex;
+  justify-content: space-between;
+
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+.row .row-box{
+  max-width: 640px;
+  padding: 80px 0 64px;
+}
+.row-box h1{
+  font-size: 48px;
+  font-weight: 600;
+  display: inline;
+  letter-spacing: -4px;
+  line-height: 1.1875;
+}
+.column{
+  position: absolute;
+  right: 0;
+  padding-bottom: 54px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding: 90px 0 74px;
+  margin: 0;
+  min-width: 0;
+}
+.shop-chat-section{
+  line-height: 1.57143;
+  letter-spacing: 0;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 16px;
+  -webkit-text-size-adjust: none;
+}
+.shop-icon{
+  width: 36px;
+  height: 36px;
+  padding-right: 8px;
+}
+.shop-chat-title{
+  font-weight: 600;
+  padding-top: 0;
+}
+.shop-chat-content{
+  display: block;
+}
+.shop-chat-content a{
+  background: transparent;
+  border: 0;
+  color: #06c;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  padding: 0;
+  vertical-align: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*second section*/
+.second-section{
+  padding-bottom: 62px;
+}
+
+.second-flex-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+}
+.card-title{
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 550;
+}
+.card-img img{
+  width: 120px;
+  height: 78px;
+}
+
+/* third section*/ *
+.third-section{
+  position: relative;
+  padding-bottom: 40px;
+  
+}
+
+.third-card-content{
+  position: absolute;
+  color: white;
+  padding: 30px;
+  box-sizing: border-box;
+  
+ 
+}
+.third-card-img img{
+  border-radius: 20px;
+  box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+
+  object-fit: cover;
+}
+.third-section-title{
+  font-size: 25px;
+  display: flex;
+  letter-spacing: -2px;
+  padding-bottom: 14px;
+  font-weight: bold;
+}
+.fake{
+  margin-left: 140px;
+}
+.custom-slide1{
+  width: 400px !important;
+  height: 500px !important;
+
+}
+.custom-slide2{
+  width: 480px!important;
+  height: 500px!important;
+}
+.custom-margin{
+  margin-left: 140px !important;
+}
+
+
+/*fourth section*/
+.custom-slide3{
+  width: 313px !important;
+  height: 500px !important;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+}
+.fourth-section-card{
+
+  padding: 30px;
+  position: relative;
+  width: 313px;
+  height: 500px;
+  box-sizing: border-box;
+}
+.fourth-section-img{
+  padding: 40px 0px 0px;
+}
+.fourth-section-img img{
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 230px;
+}
+.fourth-section-ul{
+  padding: 19px 0px 14px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.fourth-section-ul li{
+  width: 12px;
+  height: 12px;
+}
+.fourth-section-ul li img{
+  width: 12px;
+  height: 12px;
+  object-fit: cover;
+}
+.fourth-section-text p{
+  margin-top: 10px;
+  font-size: 12px;
+  color: #bf4800;
+}
+.fourth-section-text h4{
+  margin-top: 10px;
+  font-size: 17px;
+  color:black;
+  line-height: 25px;
+  font-weight: 550;
+}
+.fourth-section-text h5{
+  font-size: 14px;
+  color:black;
+  margin-top: 21px;
+}
+.swiper-wrapper{
+  padding: 10px 0px 40px;
+}
+.swiper-button-prev,
+.swiper-button-next{
+
+  width:52px !important;
+  height: 52px !important;
+  background-color: rgba(0,0,0,.2);
+  color: #fff !important;
+  border-radius: 50%;   
+  
+
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+/*fifth section*/
+.custom-slide4{
+  width: 313px !important;
+  height: 240px  !important;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 2px 4px 12px rgba(0,0,0,.08);
+}
+.fifth-section-card{
+  padding: 30px 30px 0px;
+  position: relative;
+}
+.fifth-section-svg{
+  height: 48px;
+  padding: 0px 0px 10px;
+}
+.fifth-section-card h2{
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1440px){
+  .first-section{
+    margin: 0 140px;
+  }
+  .second-section{
+    margin: 50px 140px;
+  }
+  .third-section-title{
+    margin: auto 140px;
+  }
+  
+}
