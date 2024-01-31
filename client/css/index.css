@@ -11,7 +11,7 @@ body{
   background-color: #333; 
   position: fixed;
   top: 0;
-  
+  z-index: 9999;
 }
 
 .nav-list {
@@ -52,7 +52,7 @@ body{
 }
 section .main-content{
   width: 100%;
-  height: 500px;
+  height: 692px;
 }
 
 section .main-content .box {
@@ -69,7 +69,7 @@ section .main-content .box .logo-img img{
 section .main-content .box .logo-img{
   display: flex;
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: auto;
@@ -85,7 +85,7 @@ section .main-content .main-img{
   top: 0;
   z-index: -1;
   width: 100%;
-  height: 500px;
+  height: 692px;
 }
 
 .main-text.center{
@@ -93,7 +93,7 @@ section .main-content .main-img{
   flex-flow : column nowrap;
   align-items: center;
   position: absolute;
-  top: 63%;
+  top: 83%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: auto;
@@ -108,7 +108,7 @@ section .main-content .main-img{
   flex-flow: row wrap;
   font-size: 20px;
   position: absolute;
-  top: 73%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 5px;
@@ -139,17 +139,180 @@ section .main-content .main-img{
   width: 100%;
   height: 500px;
   position: absolute;
-  top: -30%;
+  top: -40%;
+  color: white;
+  margin: 10px 0px;
+}
+.content-wrapper3{
+  color: black;
+}
+
+.content-wrapper2 .main-text.bottom a,
+.content-wrapper3 .main-text.bottom a{
+  margin: 10px 0px;
+}
+
+
+
+
+
+/* grid view  */
+
+.grid-view{
+  width: 100%;
+  display: grid;
+  width: 100%;
+  height: 250px;
+  color: white;
+  grid-gap: 263px 6px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+}
+
+.grid-view .box{
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 250px;
+
+}
+
+.grid-view .main-content .row {
+  padding: 0px 5px;
+  position: relative;
+} 
+
+.grid-view .box .main-img {
+  width: 100%; /* Ensure images take the full width of their container */
+  margin-top: 10px;
+  height: 500px;
+}
+
+
+.grid-view .main-content .row .grid-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  top: -25%;
+  color: black;
+}
+
+.grid-view .main-content .row .grid-wrapper .logo-img{
+  display: flex;
+  width: auto;
+  width: auto;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;  
+  font-size: 40px;
+}
+
+.grid-view .main-content .row .grid-wrapper .main-text.center p{
+  color: black;
+  font-size: 20px;
+}
+
+.grid-view .main-content .row .grid-wrapper .main-text.center{
+  width: auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid-view .main-content .row .grid-wrapper .main-text.main-text.bottom {
+  width: auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid-view .main-content .row .grid-wrapper .color .logo-img .series {
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  color: red !important;
+  font-size: 10px;
+  font-weight: bold;
+}
+.color {
   color: white;
 }
 
-.content-wrapper2 .main-text.bottom a{
-  padding-bottom: 50px;
+/* second row */
+.grid-view .main-content .row2 {
+  position: relative;
+  width: auto;
+  color: black;
+}
+
+.grid-view .main-content .row2 .grid-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  position: relative;
+}
+
+.grid-view .box .row2 .main-img {
+  width: 100%; 
+  margin-top: 10px;
+  height: 500px;
+ 
+}
+.grid-view .main-content .row2 .logo-img2 img {
+  width: 42px;
+}
+
+.grid-view .box .row2 .grid-wrapper2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid-view .box .row2 .grid-wrapper2 .logo-img2{
+  font-size: 40px;
+  width: auto;
+  font-weight: 700;
+}
+
+.grid-view .box .row2 .grid-wrapper2 .logo-img2 .series{
+  font-size: 18px;
+  color: orange;
+  width: auto;
+
+}
+
+#ultra{
+  padding-left: 35px;
+}
+
+.grid-view .box .row2 .grid-wrapper2 .main-text.bottom2{
+  width: 222px;
+  position: absolute;
+  top: 138%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+
+}
+
+.main-text.bottom2 .btn {
+  padding: 0 15px;
+  color: #06c;
+  letter-spacing: inherit
 }
 
 
-/* wrapper3 */
-
-.content-wrapper3 .main-text.bottom a{
-  padding-bottom: 50px;
-}
