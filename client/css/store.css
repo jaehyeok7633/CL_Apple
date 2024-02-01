@@ -3,6 +3,7 @@ body {
 }
 .first-section{
   position: relative;
+  min-width: 1000px;
 
 }
 .section-contents{
@@ -291,7 +292,6 @@ body {
   gap:15px
 }
 .link button{
-
   border-radius: 20px;
   background-color: lightgray;
   color: black;
@@ -300,15 +300,17 @@ body {
   text-align: center;
   text-decoration: none;
   border: #fff;
-  padding: 14px;
+  padding: 12px;
 }
 .link-contents{
   margin-top: 20px;
+  width: 1000px;
+ 
 }
 /*bottom text*/
 
 .bottom-text{
-  max-width: 1000px;
+  width: 1000px;
   margin: 0 auto;
   font-size: 11px;
   color: gray;
@@ -321,7 +323,7 @@ body {
 }
 /*footer*/
 .footer{
-  max-width: 1000px;
+  width: 1000px;
   margin: 15px auto 30px;
 }
 .footer-title{
@@ -387,6 +389,51 @@ body {
     margin: 0px 140px;
   }
 }
+
+@media only screen and (max-width: 1440px){
+  .first-section{
+    margin: 0 140px;
+  }
+  .second-section{
+    margin: 50px 140px;
+  }
+  .third-section-title{
+    margin: auto 140px;
+    min-width: 1000px;
+  }
+  .link{
+    margin: 0px 140px;
+  }
+  body{
+    padding: 30px;
+  }
+  .custom-margin{
+    margin: 0 140px;
+  }
+}
+
+@media only screen and (max-width:800px){
+  .first-section{
+    margin: auto;
+  }
+  .second-section{
+    margin: auto;
+  }
+  .third-section-title{
+    margin: auto;
+    min-width: 1000px;
+  }
+  .link{
+    margin: auto;
+  }
+  body{
+    padding: 30px;
+  }
+  .custom-margin{
+    margin-left: 0px !important;
+  }
+}
+
 
 /* Swiper 슬라이드에 대한 기본 스타일 */
 .card {
