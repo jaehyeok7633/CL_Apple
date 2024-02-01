@@ -528,3 +528,16 @@ document.addEventListener('DOMContentLoaded', function () {
   
 });
 
+
+var thirdSwiper = new Swiper('.head-swiper', {
+  loop: true,
+  slidesPerView: 1,
+  autoHeight: true,
+  autoWidth: true,
+
+  navigation: {
+    prevEl: '.head-swiper .swiper-button-prev',
+    nextEl: '.head-swiper .swiper-button-next'
+  },
+});
+
