@@ -296,7 +296,7 @@ section .main-content .main-img{
 }
 
 #ultra{
-  padding-left: 35px;
+  padding-left: 60px;
 }
 
 .grid-view .box .row2 .grid-wrapper2 .main-text.bottom2{
@@ -315,4 +315,14 @@ section .main-content .main-img{
   letter-spacing: inherit
 }
 
+
+/* module content */
+
+.module-content{
+  width: 100%;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: aqua;
+}
 
