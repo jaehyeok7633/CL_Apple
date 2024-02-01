@@ -362,6 +362,153 @@ document.querySelector('.seven-section-swiper').addEventListener('mouseleave', f
   
 });
 
+var eightSwiper = new Swiper('.eight-section-swiper', {
+  loop: false,
+  slidesPerView: 2,
+  spaceBetween: 20,
+  autoHeight: true,
+  autoWidth: true,
+
+  navigation: {
+    prevEl: '.eight-section-swiper .swiper-button-prev',
+    nextEl: '.eight-section-swiper .swiper-button-next'
+  },
+
+  on: {
+    init: function () {
+
+      var currentSlide = this.realIndex + 1;
+
+      // 초기화 시 버튼 상태 설정
+      if (currentSlide === 1) {
+        document.querySelector('.eight-section-swiper .swiper-button-prev').style.visibility = 'hidden';
+        document.querySelector('.eight-section-swiper .swiper-button-next').style.visibility = 'visible';
+      } else if (this.isEnd) {
+        document.querySelector('.eight-section-swiper .swiper-button-next').style.visibility = 'hidden';
+        document.querySelector('.eight-section-swiper .swiper-button-prev').style.visibility = 'visible';
+      } else {
+        document.querySelector('.eight-section-swiper .swiper-button-prev').style.visibility = 'visible';
+        document.querySelector('.eight-section-swiper .swiper-button-next').style.visibility = 'visible';
+      }
+    },
+    slideChange: function () {
+    
+      var currentSlide = this.realIndex + 1;
+
+      // 슬라이드 변경 시 버튼 상태 설정
+      if (currentSlide === 1) {
+        document.querySelector('.eight-section-swiper .swiper-button-prev').style.visibility = 'hidden';
+        document.querySelector('.eight-section-swiper .swiper-button-next').style.visibility = 'visible';
+      } else if (this.isEnd) {
+        document.querySelector('.eight-section-swiper .swiper-button-next').style.visibility = 'hidden';
+        document.querySelector('.eight-section-swiper .swiper-button-prev').style.visibility = 'visible';
+      } else {
+        document.querySelector('.eight-section-swiper .swiper-button-prev').style.visibility = 'visible';
+        document.querySelector('.eight-section-swiper .swiper-button-next').style.visibility = 'visible';
+      }
+    },
+  },
+});
+
+// 마우스 이벤트 처리
+document.querySelector('.eight-section-swiper').addEventListener('mouseenter', function () {
+
+  var currentSlide = eightSwiper.realIndex + 1;
+
+      // 슬라이드 변경 시 버튼 상태 설정
+      if (currentSlide === 1) {
+        document.querySelector('.eight-section-swiper .swiper-button-prev').style.visibility = 'hidden';
+        document.querySelector('.eight-section-swiper .swiper-button-next').style.visibility = 'visible';
+      } else if (eightSwiper.isEnd) {
+        document.querySelector('.eight-section-swiper .swiper-button-next').style.visibility = 'hidden';
+        document.querySelector('.eight-section-swiper .swiper-button-prev').style.visibility = 'visible';
+      } else {
+        document.querySelector('.eight-section-swiper .swiper-button-prev').style.visibility = 'visible';
+        document.querySelector('.eight-section-swiper .swiper-button-next').style.visibility = 'visible';
+      }
+});
+
+document.querySelector('.eight-section-swiper').addEventListener('mouseleave', function () {
+
+    document.querySelector('.eight-section-swiper .swiper-button-prev').style.visibility = 'hidden';
+    document.querySelector('.eight-section-swiper .swiper-button-next').style.visibility = 'hidden';
+  
+});
+
+
+var nineSwiper = new Swiper('.nine-section-swiper', {
+  loop: false,
+  slidesPerView: 2,
+  spaceBetween: 20,
+  autoHeight: true,
+  autoWidth: true,
+
+  navigation: {
+    prevEl: '.nine-section-swiper .swiper-button-prev',
+    nextEl: '.nine-section-swiper .swiper-button-next'
+  },
+
+  on: {
+    init: function () {
+
+      var currentSlide = this.realIndex + 1;
+
+      // 초기화 시 버튼 상태 설정
+      if (currentSlide === 1) {
+        document.querySelector('.nine-section-swiper .swiper-button-prev').style.visibility = 'hidden';
+        document.querySelector('.nine-section-swiper .swiper-button-next').style.visibility = 'visible';
+      } else if (this.isEnd) {
+        document.querySelector('.nine-section-swiper .swiper-button-next').style.visibility = 'hidden';
+        document.querySelector('.nine-section-swiper .swiper-button-prev').style.visibility = 'visible';
+      } else {
+        document.querySelector('.nine-section-swiper .swiper-button-prev').style.visibility = 'visible';
+        document.querySelector('.nine-section-swiper .swiper-button-next').style.visibility = 'visible';
+      }
+    },
+    slideChange: function () {
+    
+      var currentSlide = this.realIndex + 1;
+
+      // 슬라이드 변경 시 버튼 상태 설정
+      if (currentSlide === 1) {
+        document.querySelector('.nine-section-swiper .swiper-button-prev').style.visibility = 'hidden';
+        document.querySelector('.nine-section-swiper .swiper-button-next').style.visibility = 'visible';
+      } else if (this.isEnd) {
+        document.querySelector('.nine-section-swiper .swiper-button-next').style.visibility = 'hidden';
+        document.querySelector('.nine-section-swiper .swiper-button-prev').style.visibility = 'visible';
+      } else {
+        document.querySelector('.nine-section-swiper .swiper-button-prev').style.visibility = 'visible';
+        document.querySelector('.nine-section-swiper .swiper-button-next').style.visibility = 'visible';
+      }
+    },
+  },
+});
+
+// 마우스 이벤트 처리
+document.querySelector('.nine-section-swiper').addEventListener('mouseenter', function () {
+
+  var currentSlide = nineSwiper.realIndex + 1;
+
+      // 슬라이드 변경 시 버튼 상태 설정
+      if (currentSlide === 1) {
+        document.querySelector('.nine-section-swiper .swiper-button-prev').style.visibility = 'hidden';
+        document.querySelector('.nine-section-swiper .swiper-button-next').style.visibility = 'visible';
+      } else if (nineSwiper.isEnd) {
+        document.querySelector('.nine-section-swiper .swiper-button-next').style.visibility = 'hidden';
+        document.querySelector('.nine-section-swiper .swiper-button-prev').style.visibility = 'visible';
+      } else {
+        document.querySelector('.nine-section-swiper .swiper-button-prev').style.visibility = 'visible';
+        document.querySelector('.nine-section-swiper .swiper-button-next').style.visibility = 'visible';
+      }
+});
+
+document.querySelector('.nine-section-swiper').addEventListener('mouseleave', function () {
+
+    document.querySelector('.nine-section-swiper .swiper-button-prev').style.visibility = 'hidden';
+    document.querySelector('.nine-section-swiper .swiper-button-next').style.visibility = 'hidden';
+  
+});
+
 // 페이지 로드 시 초기 버튼 상태 설정
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.third-section-swiper .swiper-button-prev').style.visibility = 'hidden';
@@ -374,6 +521,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.six-section-swiper .swiper-button-next').style.visibility = 'hidden';
     document.querySelector('.seven-section-swiper .swiper-button-prev').style.visibility = 'hidden';
     document.querySelector('.seven-section-swiper .swiper-button-next').style.visibility = 'hidden';
+    document.querySelector('.eight-section-swiper .swiper-button-prev').style.visibility = 'hidden';
+    document.querySelector('.eight-section-swiper .swiper-button-next').style.visibility = 'hidden';
+    document.querySelector('.nine-section-swiper .swiper-button-prev').style.visibility = 'hidden';
+    document.querySelector('.nine-section-swiper .swiper-button-next').style.visibility = 'hidden';
   
 });
 
