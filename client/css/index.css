@@ -1,6 +1,7 @@
-body{
+body {
   margin: 0px !important;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;}
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
 
 
 .header {
@@ -8,7 +9,7 @@ body{
   position: fixed;
   background: #f8f8f8;
   border-bottom: 1px solid black;
-  background-color: #333; 
+  background-color: #333;
   position: fixed;
   top: 0;
   z-index: 9999;
@@ -19,7 +20,7 @@ body{
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin:12px;
+  margin: 12px;
 
 }
 
@@ -28,19 +29,21 @@ body{
   text-decoration: none;
   color: #333;
   font-size: 10px;
-  margin:30px;
+  margin: 30px;
   color: white;
 }
 
 .nav-menu li a:hover {
   color: rgb(227, 216, 216);
 }
-.nav.nav-bar{
+
+.nav.nav-bar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.logo{
+
+.logo {
   display: flex;
   align-items: center;
 }
@@ -50,7 +53,8 @@ body{
 #first-content {
   margin-top: 30px;
 }
-section .main-content{
+
+section .main-content {
   width: 100%;
   height: 692px;
 }
@@ -60,13 +64,14 @@ section .main-content .box {
   justify-content: center;
   flex-flow: column wrap;
   position: relative;
- 
+
 }
 
-section .main-content .box .logo-img img{
+section .main-content .box .logo-img img {
   width: 50px;
 }
-section .main-content .box .logo-img{
+
+section .main-content .box .logo-img {
   display: flex;
   position: absolute;
   top: 75%;
@@ -77,10 +82,10 @@ section .main-content .box .logo-img{
   line-height: 1.07143;
   font-weight: 600;
   letter-spacing: -.005em;
-  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-section .main-content .main-img{
+section .main-content .main-img {
   position: absolute;
   top: 0;
   z-index: -1;
@@ -88,9 +93,9 @@ section .main-content .main-img{
   height: 692px;
 }
 
-.main-text.center{
+.main-text.center {
   display: flex;
-  flex-flow : column nowrap;
+  flex-flow: column nowrap;
   align-items: center;
   position: absolute;
   top: 83%;
@@ -99,8 +104,9 @@ section .main-content .main-img{
   width: auto;
 }
 
-.main-text.center p{
-  color: #6e6e73;;
+.main-text.center p {
+  color: #6e6e73;
+  ;
 }
 
 .main-text.bottom {
@@ -122,16 +128,16 @@ section .main-content .main-img{
 
 /* box 2 section */
 
-.content-wrapper, 
+.content-wrapper,
 .content-wrapper2,
-.content-wrapper3{
-   display: flex;
-   z-index: -1;
-  
+.content-wrapper3 {
+  display: flex;
+  z-index: -1;
+
 }
 
 .content-wrapper2,
-.content-wrapper3{
+.content-wrapper3 {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
@@ -143,12 +149,13 @@ section .main-content .main-img{
   color: white;
   margin: 10px 0px;
 }
-.content-wrapper3{
+
+.content-wrapper3 {
   color: black;
 }
 
 .content-wrapper2 .main-text.bottom a,
-.content-wrapper3 .main-text.bottom a{
+.content-wrapper3 .main-text.bottom a {
   margin: 10px 0px;
 }
 
@@ -158,7 +165,7 @@ section .main-content .main-img{
 
 /* grid view  */
 
-.grid-view{
+.grid-view {
   width: 100%;
   display: grid;
   width: 100%;
@@ -167,10 +174,10 @@ section .main-content .main-img{
   grid-gap: 263px 6px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-
+  margin-bottom: 1300px;
 }
 
-.grid-view .box{
+.grid-view .box {
   display: flex;
   flex-flow: column wrap;
   width: 100%;
@@ -181,16 +188,17 @@ section .main-content .main-img{
 .grid-view .main-content .row {
   padding: 0px 5px;
   position: relative;
-} 
+}
 
 .grid-view .box .main-img {
-  width: 100%; /* Ensure images take the full width of their container */
+  width: 100%;
+  /* Ensure images take the full width of their container */
   margin-top: 10px;
   height: 500px;
 }
 
 
-.grid-view .main-content .row .grid-wrapper{
+.grid-view .main-content .row .grid-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -203,7 +211,7 @@ section .main-content .main-img{
   color: black;
 }
 
-.grid-view .main-content .row .grid-wrapper .logo-img{
+.grid-view .main-content .row .grid-wrapper .logo-img {
   display: flex;
   width: auto;
   width: auto;
@@ -211,16 +219,16 @@ section .main-content .main-img{
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: auto;  
+  width: auto;
   font-size: 40px;
 }
 
-.grid-view .main-content .row .grid-wrapper .main-text.center p{
+.grid-view .main-content .row .grid-wrapper .main-text.center p {
   color: black;
   font-size: 20px;
 }
 
-.grid-view .main-content .row .grid-wrapper .main-text.center{
+.grid-view .main-content .row .grid-wrapper .main-text.center {
   width: auto;
   position: absolute;
   top: 30%;
@@ -244,6 +252,7 @@ section .main-content .main-img{
   font-size: 10px;
   font-weight: bold;
 }
+
 .color {
   color: white;
 }
@@ -263,11 +272,12 @@ section .main-content .main-img{
 }
 
 .grid-view .box .row2 .main-img {
-  width: 100%; 
+  width: 100%;
   margin-top: 10px;
   height: 500px;
- 
+
 }
+
 .grid-view .main-content .row2 .logo-img2 img {
   width: 42px;
 }
@@ -282,24 +292,24 @@ section .main-content .main-img{
   transform: translate(-50%, -50%);
 }
 
-.grid-view .box .row2 .grid-wrapper2 .logo-img2{
+.grid-view .box .row2 .grid-wrapper2 .logo-img2 {
   font-size: 40px;
   width: auto;
   font-weight: 700;
 }
 
-.grid-view .box .row2 .grid-wrapper2 .logo-img2 .series{
+.grid-view .box .row2 .grid-wrapper2 .logo-img2 .series {
   font-size: 18px;
   color: orange;
   width: auto;
 
 }
 
-#ultra{
+#ultra {
   padding-left: 60px;
 }
 
-.grid-view .box .row2 .grid-wrapper2 .main-text.bottom2{
+.grid-view .box .row2 .grid-wrapper2 .main-text.bottom2 {
   width: 222px;
   position: absolute;
   top: 138%;
@@ -318,11 +328,54 @@ section .main-content .main-img{
 
 /* module content */
 
-.module-content{
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-    position: relative;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    background-color: aqua;
+  height: 100;
 }
 
+
+.slider-container {
+  display: flex;
+}
+
+.vertical-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.vertical-align img {
+  width: 100%;
+  height: auto;
+  /* 이미지의 가로 크기에 따라 높이 자동 조절 */
+  margin: 5px;
+  /* 이미지 간격을 조절할 수 있는 여유 마진 추가 */
+}
+
+
+/* footer */
+
+.footer .row{
+  background-color: rgb(245, 245, 247);
+  color: rgb(0 0 0 / 56%);
+  
+}
+
+.footer .row.first-row {
+  padding: 100px;
+}
+
+.borderline {
+  width: 2000px;
+  padding-bottom: 100px;
+  border-bottom: 4px solid rgb(0 0 0 / 16%);
+}
+
+.footer .row.second-row {
+  padding: 0 100px;
+}
