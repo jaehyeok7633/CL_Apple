@@ -2,6 +2,7 @@ body {
   background-color: #F5F5F7;
   position: relative;
 }
+
 .header {
   width: 100%;
   color: black;
@@ -14,14 +15,10 @@ body {
   height: 25px;
   display: flex;
   list-style-type: none;
-  padding: 5px;
+  padding-top: 5px;
+  padding-left: 20px;
   margin-top: 10px;
-  
 }
-.nav-item{
-
-}
-
 
 .nav-menu li a {
   font-family: '선명 고딕', sans-serif;
@@ -48,16 +45,60 @@ body {
 }
 .drop-content{
   position: absolute;
-  display: none;
-  top: 1%;
+  visibility: hidden;
+  top: 0px;
   left: 0;
   right: 0;
   bottom: 93%;
-  background-color: #fff;
+  background-color: #F5F5F7;
   z-index: 999;
+  opacity: 0;
+  transform: translateY(0px);
+  transition: opacity 0.3s ease, transform 0.3s ease, top 0.3s ease;
+  
+
+  
 }
+.drop-content-box{
+  display: flex;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.drop-content-title{
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 20px;
+}
+.drop-content-ul1{
+  color: black;
+  font-size: 24px;
+  padding-right: 88px;
+}
+.drop-content-ul2{
+  color: black;
+  font-size: 12px;
+  padding-right: 44px;
+}
+.drop-content-ul1 li{
+  padding: 10px;
+  padding-top: 0px;
+}
+.drop-content-ul2 li{
+  padding: 8px;
+  padding-top: 0px;
+}
+
 .nav-item:hover .drop-content{
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  top:0.8%;
+}
+
+.nav-item{
+  height: 40px;
 }
 
 
@@ -500,7 +541,17 @@ body {
   .link{
     margin: 0px 140px;
   }
+  
 }
+@media only screen and (min-width: 834px){ 
+  .drop-content-box{
+    padding-top: 40px;
+    padding-bottom: 84px;
+    padding-left: 30px;
+  }
+}
+  
+
 
 @media only screen and (max-width: 1440px){
   .first-section{
@@ -545,6 +596,13 @@ body {
     margin-left: 0px !important;
   }
 }
+@media only screen and (max-width:1000px){
+  .nav-list{
+    display: none;
+  }
+}
+
+
 
 
 /* Swiper 슬라이드에 대한 기본 스타일 */

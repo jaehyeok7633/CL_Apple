@@ -541,3 +541,17 @@ var thirdSwiper = new Swiper('.head-swiper', {
   },
 });
 
+document.querySelector('.nav-item').addEventListener('mouseenter', function () {
+    document.querySelector('.second-section').style.filter = 'blur(10px)';
+    document.querySelector('.third-section').style.filter = 'blur(10px)';
+
+
+});
+
+document.querySelector('.nav-item').addEventListener('mouseleave', function () {
+  document.querySelector('.second-section').style.filter = 'blur(0px)';
+  document.querySelector('.third-section').style.filter = 'blur(0px)';
+
+
+});
+
