@@ -568,10 +568,13 @@ body {
     margin: 0px 140px;
   }
   body{
-    padding: 30px;
+    padding: 0px 30px 30px 30px;
   }
   .custom-margin{
     margin: 0 140px;
+  }
+  .nav.nav-bar{
+    justify-content: flex-start;
   }
 }
 
@@ -590,10 +593,13 @@ body {
     margin: auto;
   }
   body{
-    padding: 30px;
+    padding: 0px 30px 30px 30px;
   }
   .custom-margin{
     margin-left: 0px !important;
+  }
+  .nav.nav-bar{
+    justify-content: flex-start;
   }
 }
 @media only screen and (max-width:1000px){
