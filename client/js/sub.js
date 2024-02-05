@@ -529,7 +529,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-var thirdSwiper = new Swiper('.head-swiper', {
+var headSwiper = new Swiper('.head-swiper', {
   loop: true,
   slidesPerView: 1,
   autoHeight: true,
