@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="swiper homeswiper">
+  
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <span class="first-img vertical-align">
+                    <img src="img\visual5.jpg" alt="0" />
+                </span>
+            </div>
+            <div class="swiper-slide">
+                <span class="vertical-align">
+                    <img src="img/visual2.jpg" alt="1" />
+                </span>
+            </div>
+            <div class="swiper-slide">
+                <span class="vertical-align">
+                    <img src="img/visual3.jpg" alt="2" />
+                </span>
+            </div>
+            <div class="swiper-slide">
+                <span class="vertical-align">
+                    <img src="img/visual4.jpg" alt="3"/>
+                </span>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+   
+</div>
+</body>
+
+<script src="../js/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.homeswiper', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+
+    navigation: {
+      nextEl: '.homeswiper .swiper-button-next',
+      prevEl: '.homeswiper .swiper-button-prev',
+    },
+  });
+</script>
+</html>
