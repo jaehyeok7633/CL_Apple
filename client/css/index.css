@@ -74,7 +74,7 @@ section .main-content .box .logo-img img {
 section .main-content .box .logo-img {
   display: flex;
   position: absolute;
-  top: 75%;
+  top: 67%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: auto;
@@ -98,7 +98,7 @@ section .main-content .main-img {
   flex-flow: column nowrap;
   align-items: center;
   position: absolute;
-  top: 83%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: auto;
@@ -221,11 +221,29 @@ section .main-content .main-img {
   transform: translate(-50%, -50%);
   width: auto;
   font-size: 40px;
+  font-weight: bold;
 }
-
+.grid-view .main-content .row .grid-wrapper .logo-img-white {
+  display: flex;
+  width: auto;
+  width: auto;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
 .grid-view .main-content .row .grid-wrapper .main-text.center p {
   color: black;
   font-size: 20px;
+}
+
+
+.grid-view .main-content .row .grid-wrapper .main-text.center.white { 
+  color: white;
 }
 
 .grid-view .main-content .row .grid-wrapper .main-text.center {
@@ -287,7 +305,7 @@ section .main-content .main-img {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 11%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -310,7 +328,7 @@ section .main-content .main-img {
 }
 
 .grid-view .box .row2 .grid-wrapper2 .main-text.bottom2 {
-  width: 222px;
+  width: 265px;
   position: absolute;
   top: 138%;
   left: 50%;
@@ -363,7 +381,6 @@ section .main-content .main-img {
 .footer .row{
   background-color: rgb(245, 245, 247);
   color: rgb(0 0 0 / 56%);
-  
 }
 
 .footer .row.first-row {
@@ -372,10 +389,33 @@ section .main-content .main-img {
 
 .borderline {
   width: 2000px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   border-bottom: 4px solid rgb(0 0 0 / 16%);
 }
 
 .footer .row.second-row {
-  padding: 0 100px;
+  padding: 0 80px;
 }
+
+.third-borderline {
+  width: 2000px;
+  border-bottom: 4px solid rgb(0 0 0 / 16%);
+}
+
+.third-row {
+  padding: 0px 200px;
+}
+
+.third-row .link span {
+  padding : 0 10px;
+}
+
+.un {
+  padding-right: 50px;
+}
+
+.footer-link{
+  text-decoration: #06c;
+  text-decoration: underline;
+}
+
